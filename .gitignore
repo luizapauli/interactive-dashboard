@@ -2,7 +2,7 @@
 .env
 
 # 2. Virtual Enviroment (Heavy bib)
-venv/
+.venv/
 env/
 
 # 3. Bytecode Python (Trash compilation)
