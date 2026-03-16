@@ -54,8 +54,8 @@ df_filtered = df[
 st.subheader("📊 Overall Metrics")
 
 if not df_filtered.empty:
-    avg_salary = df_filtered['Salary'].mean()
-    max_salary = df_filtered['Salary'].max()
+    avg_salary = df_filtered['USD'].mean()
+    max_salary = df_filtered['USD'].max()
     total_entries = df_filtered.shape[0]
     most_common_role = df_filtered['Role'].mode()[0]
 else:
@@ -69,3 +69,19 @@ col4.metric("Most Common Role", most_common_role)
 
 st.markdown("---")
 
+col_graph1, col_graph2 = st.columns(2, gap="medium")
+
+with col_graph1:
+    if not df_filtered.empty:
+        top_roles = df_filtered.groupby('Role')['USD'].mean().nlargest(10).sort_values(ascending=True).reset_index()
+        graph_roles = px.bar(
+            top_roles,
+            x = 'USD',
+            y = 'Role',
+            orientation='h',
+            title="Top 10 Roles by Average Salary",
+            labels={"USD": "Annual Average Salary (USD)", "Role": "Job Role"}
+        )
+        st.plotly_chart(graph_roles, use_container_width=True)
+    else:
+        st.info("No data available for the selected filters.")
