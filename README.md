@@ -9,6 +9,8 @@ This project was developed during **Class 4** of the **Alura Data Immersion 2025
 
 Using **Streamlit**, this application allows users to explore salary trends based on seniority, company size, and contract type, providing visual insights into the data market.
 
+[![View Here](https://img.shields.io/badge/View_Here-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://interactive-dashboard-5gadtzdyqum2cjinwxf2fk.streamlit.app/)
+
 ## ✨ Features
 * **Interactive Filters:** Popover filters for Year, Seniority Level, Contract Type, and Company Size.
 * **Key Performance Indicators (KPIs):** Real-time calculation of Average Salary, Max Salary, and Most Frequent Job Title.
