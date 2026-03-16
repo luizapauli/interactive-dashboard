@@ -1,0 +1,23 @@
+[theme]
+base = "light"
+
+# --- Fundo ---
+# O segredo: Não é branco puro. É um "Warm White" (Papel).
+# Alternativas comuns nesse estilo: "#FDFCF8" (quente) ou "#FAF9F6" (alabastro)
+backgroundColor = "#FDFCF8"
+
+# --- Barra Lateral ---
+# Um tom levemente mais escuro que o fundo, puxando para o bege/cinza quente
+secondaryBackgroundColor = "#F4F1EA"
+
+# --- Cor de Destaque (Primary) ---
+# O estilo Anthropic usa tons terrosos/argila, não vermelho vivo.
+primaryColor = "#BF5700" 
+
+# --- Texto ---
+# Cinza escuro para suavizar o contraste
+textColor = "#31333F"
+
+# --- Fontes ---
+font = "Space Grotesk:https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+codeFont = "Space Mono:https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
