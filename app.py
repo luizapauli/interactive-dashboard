@@ -13,7 +13,7 @@ df = pd.read_csv("https://raw.githubusercontent.com/luizapauli/interactive-dashb
 st.title("💲 Salary Analisys Dashboard in the Data Field")
 st.markdown("Explore the salary data in the data field over the past years. Use the filters below to refine your analysis.")
 
-col1, col2, col3, col4, col5, col6 = st.columns([1, 0.65, 1.2, 1.4, 1.6, 4], gap="xsmall", vertical_alignment="top")
+col1, col2, col3, col4, col5, col6 = st.columns([1, 0.65, 1.2, 1.4, 1.6, 4], gap="small", vertical_alignment="top")
 
 with col1:
     # st.write("🔍 Filters")
